@@ -9,8 +9,8 @@ use yii\base\Widget;
  */
 class StringManipulation extends Widget
 {
-    const TYPE_MIN_STRING = 1;
-    const TYPE_REM_SIGN   = 2;
+    const TYPE_MINIMIZE_STRING = 1;
+    const TYPE_REMOVE_SIGN     = 2;
 
     public $string = '';
     public $length = 50;
@@ -24,12 +24,12 @@ class StringManipulation extends Widget
     public function renderString()
     {
         $string = $this->string;
-        if       ($this->type==self::TYPE_MIN_STRING) {
+        if       ($this->type==self::TYPE_MINIMIZE_STRING) {
             if(strlen($string)>$this->length){
                 $tmp = str_split($string, $this->length-3);
                 $string = $tmp[0]."...";
             }
-        } elseif ($this->type==self::TYPE_REM_SIGN) {
+        } elseif ($this->type==self::TYPE_REMOVE_SIGN) {
             $string = preg_replace('/\W+/',' ', $string);
         }
         return $string;
