@@ -27,7 +27,7 @@ Usage
 
 Once the extension is installed, simply use it in your code by  :
 
-1.- Minimize a string to certain characters.
+1.- Minimize a string to certain numbers characters.
 ```php
 <?= StringManipulation::widget([
         'string' => "Oh, you can't help that,' said the Cat: 'we're all mad here. I'm mad. You're mad.",
