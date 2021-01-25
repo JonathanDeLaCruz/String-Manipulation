@@ -27,7 +27,7 @@ Usage
 
 Once the extension is installed, simply use it in your code by  :
 
-1.- Minimize a string to certain numbers of characters.
+1.- Minimize to certain numbers of characters.
 ```php
 use joan\string\StringManipulation;
 
@@ -42,7 +42,7 @@ use joan\string\StringManipulation;
 Result => Oh, you can't help that,'said the Cat...
 ```
 
-2.- Remove signs from a string.
+2.- Remove signs.
 ```php
 use joan\string\StringManipulation;
 
@@ -56,7 +56,7 @@ use joan\string\StringManipulation;
 Result => Oh you can t help that said the Cat we re all mad here I m mad You re mad
 ```
 
-2.- Random string.
+2.- Random.
 ```php
 use joan\string\StringManipulation;
 
