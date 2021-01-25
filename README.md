@@ -29,6 +29,8 @@ Once the extension is installed, simply use it in your code by  :
 
 1.- Minimize a string to certain numbers of characters.
 ```php
+use joan\string\StringManipulation;
+
 <?= StringManipulation::widget([
         'string' => "Oh, you can't help that,' said the Cat: 'we're all mad here. I'm mad. You're mad.",
         'length' => 35,
@@ -42,6 +44,8 @@ Result => Oh, you can't help that,' said ...
 
 2.- Remove signs from a string.
 ```php
+use joan\string\StringManipulation;
+
 <?= StringManipulation::widget([
         'string' => "'Oh, $ you can't help that,' @ said the Cat: 'we're * all mad here. I'm mad. * You're mad.'",
         'type'   => StringManipulation::TYPE_REMOVE_SIGN,
