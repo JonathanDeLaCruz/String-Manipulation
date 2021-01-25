@@ -27,5 +27,21 @@ Usage
 
 Once the extension is installed, simply use it in your code by  :
 
+1.- Minimize a string to certain characters.
 ```php
-<?= \\joan\string\AutoloadExample::widget(); ?>```
+<?= StringManipulation::widget([
+        'string' => 'Ojala y funcione jajajaja',
+        'length' => 15,
+        'type'   => StringManipulation::TYPE_MIN_STRING,
+    ])
+?>
+```
+
+2.- Remove signs from a string.
+```php
+<?= StringManipulation::widget([
+        'string' => 'Ojala * y *funcione 2 jajajaja',
+        'type'   => StringManipulation::TYPE_REM_SIGN,
+    ])
+?>
+```
