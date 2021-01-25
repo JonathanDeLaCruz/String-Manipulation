@@ -30,18 +30,24 @@ Once the extension is installed, simply use it in your code by  :
 1.- Minimize a string to certain characters.
 ```php
 <?= StringManipulation::widget([
-        'string' => 'Ojala y funcione jajajaja',
+        'string' => "Oh, you can't help that,' said the Cat: 'we're all mad here. I'm mad. You're mad.",
         'length' => 15,
         'type'   => StringManipulation::TYPE_MIN_STRING,
     ])
 ?>
 ```
+```
+Resultado => Oh, you can't help that,' said the...
+```
 
 2.- Remove signs from a string.
 ```php
 <?= StringManipulation::widget([
-        'string' => 'Ojala * y *funcione 2 jajajaja',
+        'string' => "'Oh, $ you can't help that,' @ said the Cat: 'we're * all mad here. I'm mad. * You're mad.'",
         'type'   => StringManipulation::TYPE_REM_SIGN,
     ])
 ?>
+```
+```
+Resultado => Oh you can t help that said the Cat we re all mad here I m mad You re mad
 ```

@@ -33,7 +33,7 @@ class StringManipulation extends Widget
                 $string = $tmp[0]."...";
             }
         } elseif ($this->type==self::TYPE_REM_SIGN) {
-            $string = preg_replace('/\W+/', ' ', $string);
+            $string = preg_replace('/\W+/',' ', $string);
         }
         return $string;
     }
