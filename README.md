@@ -32,14 +32,14 @@ Once the extension is installed, simply use it in your code by  :
 use joan\string\StringManipulation;
 
 <?= StringManipulation::widget([
-        'string' => "Oh, you can't help that,' said the Cat: 'we're all mad here. I'm mad. You're mad.",
+        'string' => "Oh, you can't help that,'said the Cat:' we're all mad here. I'm mad. You're mad.",
         'length' => 35,
         'type'   => StringManipulation::TYPE_MINIMIZE_STRING,
     ])
 ?>
 ```
 ```
-Result => Oh, you can't help that,' said ...
+Result => Oh, you can't help that,'said the Cat...
 ```
 
 2.- Remove signs from a string.
@@ -47,7 +47,7 @@ Result => Oh, you can't help that,' said ...
 use joan\string\StringManipulation;
 
 <?= StringManipulation::widget([
-        'string' => "'Oh, $ you can't help that,' @ said the Cat: 'we're * all mad here. I'm mad. * You're mad.'",
+        'string' => "Oh, $ you can't help that,'@said the Cat:' we're*all mad here. I'm mad.*You're mad.",
         'type'   => StringManipulation::TYPE_REMOVE_SIGN,
     ])
 ?>
