@@ -9,15 +9,12 @@ use yii\base\Widget;
  */
 class StringManipulation extends Widget
 {
-    public $string = '';
-
-    public $length = 50;
-
     const TYPE_MIN_STRING = 1;
-
     const TYPE_REM_SIGN   = 2;
 
-    public $type = self::TYPE_MIN_STRING;
+    public $string = '';
+    public $length = 50;
+    public $type   = 0;
 
     public function run()
     {
