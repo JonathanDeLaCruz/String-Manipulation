@@ -31,13 +31,13 @@ Once the extension is installed, simply use it in your code by  :
 ```php
 <?= StringManipulation::widget([
         'string' => "Oh, you can't help that,' said the Cat: 'we're all mad here. I'm mad. You're mad.",
-        'length' => 15,
+        'length' => 35,
         'type'   => StringManipulation::TYPE_MIN_STRING,
     ])
 ?>
 ```
 ```
-Resultado => Oh, you can't help that,' said the...
+Result => Oh, you can't help that,' said ...
 ```
 
 2.- Remove signs from a string.
@@ -49,5 +49,5 @@ Resultado => Oh, you can't help that,' said the...
 ?>
 ```
 ```
-Resultado => Oh you can t help that said the Cat we re all mad here I m mad You re mad
+Result => Oh you can t help that said the Cat we re all mad here I m mad You re mad
 ```

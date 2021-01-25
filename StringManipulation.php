@@ -29,7 +29,7 @@ class StringManipulation extends Widget
         $string = $this->string;
         if       ($this->type==self::TYPE_MIN_STRING) {
             if(strlen($string)>$this->length){
-                $tmp = str_split($string, $this->length);
+                $tmp = str_split($string, $this->length-3);
                 $string = $tmp[0]."...";
             }
         } elseif ($this->type==self::TYPE_REM_SIGN) {
