@@ -32,9 +32,9 @@ Once the extension is installed, simply use it in your code by  :
 use joan\string\StringManipulation;
 
 <?= StringManipulation::widget([
-        'string' => "Oh, you can't help that,'said the Cat:' we're all mad here. I'm mad. You're mad.",
-        'length' => 35,
         'type'   => StringManipulation::TYPE_MINIMIZE_STRING,
+        'string' => "Oh, you can't help that,'said the Cat:' we're all mad here. I'm mad. You're mad.",
+        'length' => 40,
     ])
 ?>
 ```
@@ -47,11 +47,25 @@ Result => Oh, you can't help that,'said the Cat...
 use joan\string\StringManipulation;
 
 <?= StringManipulation::widget([
-        'string' => "Oh, $ you can't help that,'@said the Cat:' we're*all mad here. I'm mad.*You're mad.",
         'type'   => StringManipulation::TYPE_REMOVE_SIGN,
+        'string' => "Oh, $ you can't help that,'@said the Cat:' we're*all mad here. I'm mad.*You're mad.",
     ])
 ?>
 ```
 ```
 Result => Oh you can t help that said the Cat we re all mad here I m mad You re mad
+```
+
+2.- Random string.
+```php
+use joan\string\StringManipulation;
+
+<?= StringManipulation::widget([
+        'type'   => StringManipulation::TYPE_RANDOM_STRING,
+        'length' => 20,
+    ])
+?>
+```
+```
+Result => iGCS3gDGD3eZvgC5ZGDC
 ```
